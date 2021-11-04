@@ -1,0 +1,21 @@
+.body{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  background-color: rgba(168, 219, 219, 0.555)
+}
+
+.login{
+  width: 100%;
+  max-width: 330px;
+  text-align: center;
+}
+
+.ancho{
+  width: 80%;
+}
+
+.spinner{
+  margin: 0% auto;
+}

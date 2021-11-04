@@ -1,0 +1,30 @@
+<div class="body">
+    <div class="login">
+      <mat-spinner *ngIf= "loading" class="spinner" diameter= "50"></mat-spinner>
+
+      <form *ngIf= "!loading" [formGroup]= "form" (ngSubmit)= "ingresar">
+      <img src="./assets/img/usuario.png" width="50%">
+      <h1> login </h1>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>usuario</mat-label>
+        <input matInput autocomplete="off" formControlName="usuario">
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>contraseña</mat-label>
+        <input type="password" matInput autocomplete="off" formControlName="password">
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary" [disabled]= "form.invalid" >Ingresar</button>
+      </form>
+    </div>
+<div>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    intent="contraseña"
+    chat-title="Capption bot"
+    agent-id="05cd6d70-01b3-4808-b82c-99402e6d7431"
+    chat-icon="https://i.imgur.com/ZLvG8sf.jpg"
+    language-code="es"
+    wait-open
+  ></df-messenger>
