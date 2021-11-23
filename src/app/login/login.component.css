@@ -3,7 +3,7 @@
   justify-content: center;
   height: 100%;
   align-items: center;
-  background-color: rgba(168, 219, 219, 0.555)
+  background-color: rgba(178, 189, 189, 0.555)
 }
 
 .login{
@@ -19,3 +19,12 @@
 .spinner{
   margin: 0% auto;
 }
+
+df-messenger {
+  --df-messenger-bot-message: #878fac;
+  --df-messenger-button-titlebar-color: #c47c3a;
+  --df-messenger-chat-background-color: #d3dde4;
+  --df-messenger-font-color: rgb(218, 228, 88);
+  --df-messenger-send-icon: #ebedf3;
+  --df-messenger-user-message: #479b3d;
+ }
