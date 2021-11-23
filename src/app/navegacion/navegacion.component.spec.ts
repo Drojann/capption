@@ -6,8 +6,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
 import { NavegacionComponent } from './navegacion.component';
+import { RouterModule } from '@angular/router';
+import { RouterLink } from '@angular/router';
+
 
 describe('NavegacionComponent', () => {
   let component: NavegacionComponent;
@@ -24,6 +26,8 @@ describe('NavegacionComponent', () => {
         MatListModule,
         MatSidenavModule,
         MatToolbarModule,
+        RouterModule,
+        RouterLink
       ]
     }).compileComponents();
   }));

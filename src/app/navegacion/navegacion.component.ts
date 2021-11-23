@@ -7,6 +7,7 @@ import { map, shareReplay } from 'rxjs/operators';
   selector: 'app-navegacion',
   templateUrl: './navegacion.component.html',
   styleUrls: ['./navegacion.component.css']
+
 })
 export class NavegacionComponent {
 
